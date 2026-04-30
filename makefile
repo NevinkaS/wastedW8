@@ -16,3 +16,6 @@ outputs/stats.o: src/stats.c src/stats.h
 # Cleaner
 clean:
 	rm -f outputs/*.o outputs/program outputs/test_runner
+
+test: tests/test_stats.c src/stats.h outputs/stats.o
+	gcc outputs/stats.o tests/test_stats.c -o outputs/test -Wall - Wpedantic - Wextra

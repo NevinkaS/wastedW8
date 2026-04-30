@@ -3,7 +3,7 @@
 // Returns the mean (average) of all elements in the array.
 float calculate_mean(int *arr, int length) {
     float sum = 0;
-    for (int i = 0; i <= length; i++) {
+    for (int i = 0; i < length; i++) {
         sum += arr[i];
     }
     return sum / length;
